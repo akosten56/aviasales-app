@@ -1,0 +1,49 @@
+.relevance-filter {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+
+  .relevance-filter__item {
+    border: 1px solid rgba(223, 229, 236, 1);
+    padding: 15px;
+    background: #fff;
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+
+    &.active {
+      background: rgba(33, 150, 243, 1);
+      color: #fff;
+    }
+
+    &:first-child {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-right: none;
+    }
+
+    &:last-child {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-left: none;
+    }
+  }
+
+  button {
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 480px) {
+  .relevance-filter {
+    .relevance-filter__item {
+      padding: 5px 10px;
+    }
+  }
+}

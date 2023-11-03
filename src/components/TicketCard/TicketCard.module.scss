@@ -1,0 +1,45 @@
+.ticket-card__overview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .ticket-card__price {
+    color: rgba(33, 150, 243, 1);
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  .ticket-card__logo {
+  }
+}
+
+.ticket-card__info {
+  display: flex;
+  gap: 20px;
+
+  .ticket-card__title {
+    color: #a0b0b9;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .ticket-card__value {
+    color: #4a4a4a;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+  }
+
+  .ticket-card__info-item {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 33.333%;
+  }
+}
