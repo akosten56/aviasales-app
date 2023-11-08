@@ -40,7 +40,7 @@ export const fetchTickets = (searchId) => {
         return dispatch(receiveTickets({ tickets: [{ price: 'error' }] }))
       }
     } catch (error) {
-      console.log(error)
+      return dispatch(receiveTickets({ tickets: [{ price: 'error' }] }))
     }
   }
 }
